@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>نموذج بيانات الحفلة</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h2>نموذج بيانات الحفلة</h2>
+
+<!-- يوم وتاريخ التحرير + القسم + نوع الحفلة -->
+<div class="row">
+  <label>يوم التحرير</label>
+  <span id="dayName" class="span-box"></span>
+
+  <label>تاريخ التحرير</label>
+  <span id="todayDate" class="span-box"></span>
+
+  <label>القسم</label>
+  <select>
+    <option>زاهية</option>
+    <option>رسال</option>
+  </select>
+
+  <label>نوع الحفلة</label>
+  <select>
+    <option>رجالي</option>
+    <option>نسائي</option>
+  </select>
+</div>
+
+<!-- يوم وتاريخ الحفلة -->
+<div class="row">
+  <label>يوم الحفلة</label>
+  <select>
+    <option>الأحد</option>
+    <option>الاثنين</option>
+    <option>الثلاثاء</option>
+    <option>الأربعاء</option>
+    <option>الخميس</option>
+    <option>الجمعة</option>
+    <option>السبت</option>
+  </select>
+
+  <label>تاريخ الحفلة</label>
+  <input type="date">
+</div>
+
+<!-- اسم العميل -->
+<div class="row">
+  <label>اسم العميل</label>
+  <input type="text">
+
+  <label>رقم الجوال</label>
+  <input type="tel">
+</div>
+
+
+
+<!-- عدد الموظفين -->
+<h3>عدد الموظفين للحفلة</h3>
+<table id="staffTable">
+  <tr>
+    <th>الصنف</th>
+    <th>العدد</th>
+    <th>ملاحظات</th>
+  </tr>
+</table>
+
+
+<!-- الخدمات داخل -->
+<h3>الخدمات داخل الباقة</h3>
+<table id="insideTable">
+  <tr>
+    <th>الصنف</th>
+    <th>العدد</th>
+    <th>ملاحظات</th>
+  </tr>
+</table>
+
+
+<!-- الخدمات خارج -->
+<h3>الخدمات خارج الباقة</h3>
+<table id="outsideTable">
+  <tr>
+    <th>الصنف</th>
+    <th>العدد</th>
+    <th>ملاحظات</th>
+  </tr>
+</table>
+
+
+<h3>التوصية</h3>
+<textarea rows="5"></textarea>
+
+<h3>الملاحظات</h3>
+<textarea rows="5"></textarea>
+
+
+<div class="print-btn-container">
+  <button onclick="prepareAndPrint()">طباعة النموذج</button>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
